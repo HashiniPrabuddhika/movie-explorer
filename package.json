@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.20.0",
+    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.6",
@@ -22,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0",
+    "format": "prettier --write \"src/**/*.{js,css}\""
   },
   "eslintConfig": {
     "extends": [
@@ -30,6 +33,7 @@
       "react-app/jest"
     ]
   },
+  "jest": { "moduleNameMapper": { "^axios$": "axios/dist/node/axios.cjs" }},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.9"
   }
 }
