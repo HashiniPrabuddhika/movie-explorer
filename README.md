@@ -2,8 +2,6 @@
 
 A responsive movie discovery web app powered by [The Movie Database (TMDb)](https://www.themoviedb.org/) API. Search for films, browse what's trending, explore cast and trailers, and build a personal favorites list. Favorites, theme and last search are saved in the browser's `localStorage`, so no backend or database is required.
 
-![CI](https://github.com/HashiniPrabuddhika/movie-explorer/actions/workflows/ci.yml/badge.svg)
-
 ## Overview
 
 The app has four main views:
@@ -153,12 +151,11 @@ The app uses the [TMDb v3 API](https://developer.themoviedb.org/reference/intro/
 
 State is split into small, focused contexts:
 
-| Context | Responsibility |
-|---|---|---|
-| `ThemeContext` | Light / dark mode | 
-| `AuthContext` | Signed-in user | 
-| `MovieContext` | Favorites and last search | 
-| `NotifyContext` | Snackbar messages | 
+ `ThemeContext` - Light / dark mode 
+ `AuthContext`  - Signed-in user | 
+ `MovieContext` - Favorites and last search  
+ `NotifyContext`- Snackbar messages 
+
 ## Testing
 
 ```bash
