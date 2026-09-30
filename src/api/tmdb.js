@@ -7,7 +7,7 @@ const api = axios.create({
 
 api.interceptors.request.use((config) => {
   config.params = {
-    api_key: process.env.TMDB_API_KEY,
+    api_key: process.env.REACT_APP_TMDB_API_KEY,
     language: 'en-US',
     ...config.params,
   };
@@ -27,7 +27,7 @@ export const getErrorMessage = (err) => {
   switch (err.response.status) {
     case 401:
       if (process.env.NODE_ENV !== 'production') {
-        console.warn('TMDb rejected the API key. Check TMDB_API_KEY in .env.local.');
+        console.warn('TMDb rejected the API key. Check REACT_APP_TMDB_API_KEY in .env.local.');
       }
       return 'We could not connect to the movie service. Please try again later.';
     case 404:
