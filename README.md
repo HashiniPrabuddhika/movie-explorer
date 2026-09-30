@@ -154,7 +154,7 @@ State is split into small, focused contexts:
  `ThemeContext` - Light / dark mode 
  `AuthContext`  - Signed-in user | 
  `MovieContext` - Favorites and last search  
- `NotifyContext`- Snackbar messages 
+ `NotifyContext`- Snackbar messages. 
 
 ## Testing
 
