@@ -221,5 +221,5 @@ Favorites, theme mode, the signed-in user and the last search live in `localStor
 ## Live Deployment Link
 
 ```
-https://your-app-name.netlify.app/
+https://creative-speculoos-ddb5c3.netlify.app/
 ```
